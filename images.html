@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOTOS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #1a1a2e;
+            font-family: 'Kaushan Script', cursive;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 20px 0;
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+
+        .image-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            background-color: #333;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 300px; /* Ajusta el ancho del contenedor según tus necesidades */
+        }
+
+        .image-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+        }
+
+        .image-item img {
+            width: 100%;
+            height: auto; /* Mantiene la proporción de la imagen */
+        }
+
+        .image-item p {
+            margin: 10px;
+            font-size: 1.2rem;
+            color: #ffffff;
+        }
+
+        .back-button {
+            background-color: #7a7a7a;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            margin: 20px;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .back-button:hover {
+            background-color: #8b8b8b;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>FOTOS</h1>
+    <div class="image-container">
+        <div class="image-item">
+            <img src="IMAGEN1.JPG" alt="Imagen 1">
+            <p>Me haces feliz</p>
+        </div>
+        <div class="image-item">
+            <img src="IMAGEN2.JPG" alt="Imagen 2">
+            <p>Te quiero</p>
+        </div>
+        <div class="image-item">
+            <img src="IMAGEN3 (3).jpg" alt="Imagen 2">
+            <p>Monito</p>
+        </div>
+       
+        
+        </div>
+    </div>
+    <button class="back-button" onclick="window.location.href='index.php'">Regresar</button>
+</body>
+</html>
